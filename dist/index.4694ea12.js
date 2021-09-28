@@ -468,7 +468,8 @@ class Sketch {
         this.camera.position.z = 1;
         this.scene = new _three.Scene();
         this.renderer = new _three.WebGLRenderer({
-            antialias: true
+            antialias: true,
+            alpha: true
         });
         // the pixel to device ratio to save up resources
         this.renderer.setPixelRatio(window.devicePixelRatio);
